@@ -1,3 +1,18 @@
+:root {
+    --azul-marinho: #0d2552;
+    --azul-claro: #c2e2fb;
+    --amarelo-claro: #fce79c;
+    --verde-agua: #bfece3;
+    --verde-destaque: #168a73;
+    --borda: #cbd5e1;
+    --fundo: #eef2f6;
+}
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,30 +20,154 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*body {}*/
-
-.cabecalho-principal {
-    display: flex;
+body {
+    background-color: var(--fundo);
     padding: 20px;
+    color: #1e293b;
+
 }
 
-main {
-    max-width: 100%;
+.pagina {
+    max-width: 960px;
     margin: 0 auto;
-    background-color: aliceblue;
-    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--borda);
 }
 
-.cabecalho-principal {
-    background-color: #0B2046;
+.cabecalho {
+    background-color: #2162da;
     color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
+    padding: 15px 25px;
 }
 
-.banner1 {
+perfil-info {
     display: flex;
-    max-width: 100%;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 50;
+    object-fit: cover;
+    background-color: var(--amarelo-claro);
+
+}
+
+.divisor-header {
+    width: 1px;
+    height: 45px;
+    background-color: #05f0c1;
+}
+
+.perfil-info h1 {
+    font-size: 1.5rem;
+}
+
+.perfil-info p {
+    font-size: 0.9rem;
+    color: #d1ddec;
+}
+
+.cabecalho nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.cabecalho nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.cabecalho nav a:hover {
+    text-decoration: underline;
+}
+
+.conteudo {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.linha {
+    display: grid;
+    gap: 18px;
+}
+
+.linha-superior,
+.linha-meio {
+    grid-template-columns: 1fr 1.4fr;
+}
+
+.card {
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.card-header {
+    padding: 8px 14px;
+    color: var(--azul-marinho);
+}
+
+.card-header h2 {
+    font-size: 1.05rem;
+}
+
+.card-body {
+    font-size: 0.9rem;
+    padding: 14px;
+}
+
+.flex-entre {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+label,
+.subtitulo-form {
+    display: block;
+    font-weight: bold;
+    color: var(--azul-marinho);
+    margin: 10px 0 5px;
+    font-size: 0.85rem;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #94a3b8;
+    border-radius: 7px;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.texto-sobre,
+.campo-ideia {
+    flex: 1;
+}
+
+.tags-interesses {
+    margin-top: 12px;
+    background-color: #d8f5ee;
 }
