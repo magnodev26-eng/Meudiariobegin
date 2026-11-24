@@ -10,42 +10,142 @@
 </head>
 
 <body>
-    <header class="cabecalho-principal"></header>
-    <img src="#" alt="foto de perfil" class="foto-perfil">
-    <p>Estudante de Desenvolvimento de Sistemas</p>
-    <nav>
-        <ul>
-            <li> <a href="#perfil"></a>Perfil</li>
-            <li> <a href="#interesses"></a>Interesses</li>
-            <li> <a href="#projetos"></a>Projetos</li>
-            <li> <a href="#rotina"></a>Rotina</li>
-            <li> <a href="#ideias"></a>Ideias</li>
-        </ul>
-    </nav>
-    <main>
-        <section id="inicio">
-            <div class="banner-principal">
-                <p></p>
+    <div class="pagina">
+        <header class="cabecalho">
+            <div class="perfil-info">
+                <img src="#avatar" alt="foto do perfil" class="foto-perfil">
+                <div class="divisor-header"></div>
+                <div>
+                    <h1> Magno Menezes</h1>
+                    <p>Estudante de Desenvolvimento de Sistemas</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li> <a href="#perfil"></a>Perfil</li>
+                    <li> <a href="#interesses"></a>Interesses</li>
+                    <li> <a href="#projetos"></a>Projetos</li>
+                    <li> <a href="#rotina"></a>Rotina</li>
+                    <li> <a href="#ideias"></a>Ideias</li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <main class="conteudo">
+
+            <div class="linha-superior">
+                <section id="perfil" class="card">
+                    <div class="card-header-azul">
+                        <h2>Sobre mim</h2>
+                    </div>
+                    <div class="card-body flex-entre">
+                        <p>Estou aprendendo a transfomar ideias em paginas web</p>
+                        <label for="frase">Minha frase da semana</label>
+                        <input type="text" id="frase" value="Um passo de cada vez">
+                    </div>
+                    <img src="notebookimg" alt="figura do notebook" class="ilustracao">
+            </div>
+            </section>
+            <section id="interesses" class="card">
+                <div class="card-header amarelo">
+                    <h2>Foco atual</h2>
+                </div>
+                <div class="card-body">
+                    <label for="foco">Quero me dedicar a</label>
+                    <select id="foco">
+                        <option selected>Design de páginas</option>
+                        <option>JavaScript</option>
+                        <option>Lógica de programação</option>
+                    </select>
+                    <div class="tags-interesses">
+                        💚 Tecnologia &bull; Música &bull; Fotografia
+                    </div>
+                </div>
+            </section>
+    </div>
+    <div class="linha linha-meio ">
+        <section id="projetos" class="card">
+            <div class="card-header azul">
+                <h2>Meus projetos</h2>
+            </div>
+            <div class="card-body grade-projetos">
+
+                <div class="subcard">
+                    <div class="thumb amarelo-claro">
+                        <img src="projeto1.png" alt="Minha página pessoal">
+                    </div>
+                    <h3>Minha página pessoal</h3>
+                    <label class="opcao"><input type="checkbox" checked> HTML organizado</label>
+                    <label class="opcao"><input type="checkbox" checked> CSS aplicado</label>
+                    <label class="opcao"><input type="checkbox"> Revisão concluída</label>
+                </div>
+
+                <div class="subcard">
+                    <div class="thumb verde-claro">
+                        <img src="projeto2.png" alt="Meu catálogo de imagens">
+                    </div>
+                    <h3>Meu catálogo de imagens</h3>
+                    <label class="opcao"><input type="checkbox" checked> HTML organizado</label>
+                    <label class="opcao"><input type="checkbox"> CSS aplicado</label>
+                    <label class="opcao"><input type="checkbox"> Revisão concluída</label>
+                </div>
+
             </div>
 
         </section>
-        <section class="banner1">
-            <div id="sobrenos">
-                <h2 id="sobre mim">Sobre mim</h2>
-                <p>Estou aprendendo a transfomar ideias em paginas web</p>
-                <h3>Minha frase da semana</h3>
-                <textarea id="espaco-frase"></textarea>
+        <section id="rotina" class="card">
+            <div class="card-header azul">
+                <h2>📅 Minha rotina de estudos</h2>
             </div>
-            <section id="foco">
-                <div id="foco-atual">
-                    <h2 id="foco2">Foco foco atual</h2>
-                    <h3>Quero me dedicar a</h3>
-                    <textarea></textarea>
+            <div class="card-body flex-entre">
+                <div>
+                    <p>Turno que pretendo reservar.</p>
+                    <strong class="subtitulo-form">Turno de estudo</strong>
+                    <label class="opcao"><input type="radio" name="turno" value="manha"> Manhã</label>
+                    <label class="opcao"><input type="radio" name="turno" value="tarde"> Tarde</label>
+                    <label class="opcao"><input type="radio" name="turno" value="noite" checked> Noite</label>
+                </div>
+                <img src="livros.png" alt="Ilustração livros" class="ilustracao">
+            </div>
+        </section>
+
+        <div class="linha linha-inferior">
+            <section class="card">
+                <div class="card-header verde">
+                    <h2>📋 O que já pratiquei</h2>
+                </div>
+                <div class="card-body flex-entre">
+                    <ul class="lista-pratica">
+                        <li>Estrutura HTML</li>
+                        <li>Estilos CSS</li>
+                        <li>Organização com Flexbox e Grid</li>
+                    </ul>
+                    <div class="badge-codigo">&lt;/&gt;</div>
                 </div>
             </section>
 
-        </section>
-    </main>
+            <section id="ideias" class="card">
+                <div class="card-header amarelo">
+                    <h2>💡 Caderno de ideias</h2>
+                </div>
+                <div class="card-body flex-entre">
+                    <div class="campo-ideia">
+                        <label for="proximo-projeto">Meu próximo projeto</label>
+                        <textarea id="proximo-projeto"
+                            rows="2">Quero criar uma página sobre meus lugares favoritos.</textarea>
+                    </div>
+                    <img src="caderno.png" alt="Ilustração caderno" class="ilustracao">
+                </div>
+
+            </section>
+        </div>
+        </main>
+        <footer class="rodape">
+            <p>Diario do Magno &bull;Autoria do aluno</p>
+        </footer>
+    </div>
 
 </body>
 
