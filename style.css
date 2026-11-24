@@ -20,9 +20,15 @@ main {
 }
 
 .cabecalho-principal {
-    background-color: rgb(26, 90, 228);
+    background-color: #0B2046;
     color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.banner1 {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
 }
