@@ -21,7 +21,7 @@
 }
 
 body {
-    background-color: var(--fundo);
+    background-color: var(--verde-agua);
     padding: 20px;
     color: #1e293b;
 
@@ -37,13 +37,18 @@ body {
 }
 
 .cabecalho {
-    background-color: #2162da;
+    background-color: #016648;
     color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     padding: 15px 25px;
+}
+
+.foto-perfil {
+    width: 100px;
+    height: 100px;
 }
 
 perfil-info {
@@ -63,7 +68,7 @@ perfil-info {
 
 .divisor-header {
     width: 1px;
-    height: 45px;
+    height: 65px;
     background-color: #05f0c1;
 }
 
@@ -170,4 +175,118 @@ textarea {
 .tags-interesses {
     margin-top: 12px;
     background-color: #d8f5ee;
+    color: var(--azul-marinho);
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.grade-projetos {
+    border: 1pxx solid var(--borda);
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.thumb {
+    height: 75px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.thumb img {
+    max-height: 60px;
+
+}
+
+.subcard h3 {
+    font-size: 0.95rem;
+    color: var(--azul-marinho);
+    margin-bottom: 8px;
+
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    color: #1e293b;
+    cursor: pointer;
+}
+
+.opcao input {
+    accent-color: var(--verde-destaque);
+    width: 16px;
+    height: 16px;
+}
+
+.lista-pratica {
+    padding-left: 18px;
+    line-height: 1.7;
+}
+
+.lista-pratica li::marker {
+    color: var(--verde-destaque);
+}
+
+.badge-codigo {
+    background-color: var(--verde-agua);
+    color: var(--azul-marinho);
+    padding: 10px 14px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.ilustracao {
+    width: 75px;
+    height: auto;
+    object-fit: contain;
+}
+
+.rodape {
+    background-color: var(--azul-marinho);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .perfil-info {
+        flex-direction: column;
+    }
+
+    .divisor-header {
+        display: none;
+    }
+
+    .cabecalho nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .linha-superior,
+    .linha-meio,
+    .linha-inferior,
+    .grade-projetos {
+        grid-template-columns: 1fr;
+
+    }
+
+    .flex-entre {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
